@@ -1,0 +1,200 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    font-family: Yekan-bakh;
+    margin-bottom: 2%;
+}
+
+.picture1 {
+    width: 55vw;
+    height: 80vh;
+    margin: 10vh 0 0 6vw;
+    background-image: url(../../../../../Images/Contactus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease-in;
+}
+
+.text {
+    margin: 10vh 15vh 0 0;
+    width: 45vw;
+    height: auto;
+}
+
+.aboutus {
+    width: 48vw;
+    margin-right: 2vw;
+    direction: rtl;
+}
+
+.aboutus p {
+    width: 80%;
+    margin-right: 2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.whyus {
+    width: 48vw;
+    margin-right: 2vw;
+    direction: rtl;
+}
+
+.whyus p {
+    width: 80%;
+    margin-right: 2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text button {
+    border: none;
+    color: var(--Sefid);
+    background-color: var(--AbiFiro);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Yekan';
+    font-size: 16px;
+    width: 10vw;
+    height: 3rem;
+    padding: 2%;
+    margin-right: 30vw;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    transition: all 250ms ease-in-out;
+}
+
+.text button:hover {
+    transition: all 250ms ease-in-out;
+    transform: translateY(15px);
+    background-color: rgb(77, 77, 77);
+    box-shadow: none;
+}
+
+.license {
+    width: 48vw;
+    margin-right: 2vw;
+    direction: rtl;
+}
+
+.license img {
+    width: 600px;
+    margin: 4rem;
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        display: block;
+    }
+
+    .picture1 {
+        width: 90%;
+        height: 80vh;
+        margin: 0 0 0 4vw;
+    }
+
+    .text {
+        width: 90vw;
+        height: auto;
+        margin: 0 0 0 4vw;
+    }
+
+    .aboutus {
+        width: 80vw;
+        direction: rtl;
+    }
+    
+    .whyus {
+        width: 80vw;
+        direction: rtl;
+    }
+
+    .license {
+        width: 80vw;
+        direction: rtl;
+    }
+
+    .license img {
+        width: 400px;
+        margin: 4rem;
+    }
+
+    .text button {
+        width: 40vw;
+        margin: 5vh 16vw 0 0;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .license img {
+        width: 300px;
+        margin: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .license img {
+        width: 300px;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 412px) {
+
+    .container {
+        display: block;
+    }
+
+    .picture1 {
+        width: 90vw;
+        height: 80vh;
+        margin: -40% 0 0 4vw;
+        background-size: 100%;
+    }
+    
+    .picture2 {
+        width: 90vw;
+        height: 80vh;
+        margin: -40% 0 0 4vw;
+        background-size: 100%;
+    }
+
+    .text {
+        width: 90vw;
+        height: 200vh;
+        margin: -40% 0 0 4vw;
+    }
+
+    .aboutus {
+        width: 80vw;
+        margin-top: -40%;
+        direction: rtl;
+    }
+    
+    .whyus {
+        width: 80vw;
+        margin-top: 15%;
+        direction: rtl;
+    }
+
+    .license {
+        width: 80vw;
+        direction: rtl;
+    }
+
+    .license img {
+        width: 300px;
+        margin: 1rem;
+    }
+
+    .text button {
+        width: 65vw;
+        margin: 2vh 3vw 0 0;
+    }
+
+
+}

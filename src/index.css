@@ -1,0 +1,40 @@
+* {
+  --AbiFiroLight: #88d7cf;
+  --AbiFiro: #4db6ab;
+  --AbiFiroDark: #2f847b;
+  --AbiFiroDarker: #18675f;
+  --Sefid: rgb(244, 244, 244);
+  --Sorme: rgb(39, 52, 110);
+  --Tala: rgb(195, 182, 145);
+  --grey: rgb(99, 99, 99);
+  --crimson: rgb(255, 89, 89);
+  font-family: Yekan-bakh;
+}
+
+@font-face {
+	font-family: 'Yekan-bakh';
+	src:	url('./Fonts//YekanBakh-Bold/@font-face/Yekan-bakh.eot'), /* IE9 Compat Modes */
+			url('./Fonts//YekanBakh-Bold/@font-face/Yekan-bakh.woff2') format('woff2'), /* Modern Browsers */
+			url('./Fonts/YekanBakh-Bold/@font-face/Yekan-bakh.woff') format('woff'), /* Modern Browsers */
+			url('./Fonts/YekanBakh-Bold/@font-face/Yekan-bakh.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Yekan-bakh;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27925ecf.css",
+    "main.js": "/static/js/main.8088427c.js",
+    "static/media/license.jpg": "/static/media/license.c49d7df156aadae7972d.jpg",
+    "static/media/Tehran.png": "/static/media/Tehran.e111ec0e8c7aade76e1c.png",
+    "static/media/logo-2.png": "/static/media/logo-2.4a8cf662e5b579f82a84.png",
+    "static/media/Landing2.jpg": "/static/media/Landing2.0df16a760d28238699a6.jpg",
+    "static/media/logo.png": "/static/media/logo.30ed17678525fb8ff78a.png",
+    "static/media/medicine.png": "/static/media/medicine.1081457fd3b19350b6d9.png",
+    "static/media/LandingPage.jpg": "/static/media/LandingPage.7a53f1c17ea9abfffc16.jpg",
+    "static/media/Yekan-bakh.eot": "/static/media/Yekan-bakh.c876130a313d5e6b9b3a.eot",
+    "static/media/Yekan-bakh.ttf": "/static/media/Yekan-bakh.3dd97663b603b87be53a.ttf",
+    "static/media/medic.png": "/static/media/medic.ebdff7f14d22ee8b069c.png",
+    "static/media/Picture2.jpg": "/static/media/Picture2.a115b95b70afede8bc18.jpg",
+    "static/media/phone-grey.png": "/static/media/phone-grey.854525d1aa6861954bd4.png",
+    "static/media/Yekan-bakh.woff": "/static/media/Yekan-bakh.1d710da3a97376832f2b.woff",
+    "static/media/Contactus.png": "/static/media/Contactus.7535319a2b2e058e277a.png",
+    "static/media/email-grey.png": "/static/media/email-grey.71931567600ee9eb656f.png",
+    "static/media/Yekan-bakh.woff2": "/static/media/Yekan-bakh.8c84ec442c2b313aaccf.woff2",
+    "static/media/Picture1.jpg": "/static/media/Picture1.8271f19852031cddf0b7.jpg",
+    "static/media/empty-folder.png": "/static/media/empty-folder.95ac1b13a0eacc995dd5.png",
+    "static/media/phone.png": "/static/media/phone.72400899015ff376c9f0.png",
+    "static/media/instagram.png": "/static/media/instagram.9417e220838c85200485.png",
+    "static/media/email.png": "/static/media/email.28af76d965426101d8a7.png",
+    "index.html": "/index.html",
+    "main.27925ecf.css.map": "/static/css/main.27925ecf.css.map",
+    "main.8088427c.js.map": "/static/js/main.8088427c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27925ecf.css",
+    "static/js/main.8088427c.js"
+  ]
+}

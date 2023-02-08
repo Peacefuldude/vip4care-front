@@ -1,0 +1,265 @@
+.container {
+    font-family: Yekan-bakh;
+}
+
+.label {
+    text-align: center;
+}
+
+.label p {
+    margin: 0;
+}
+
+.label_title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.label_title div {
+    width: 30%;
+    height: 1px;
+    background-color: rgb(107, 107, 107);
+    margin-top: 5%;
+}
+
+.label_title h2 {
+    margin-top: 4%;
+}
+
+.formContainer {
+    width: 40vw;
+    height: auto;
+    margin: 0 0 1vh 9vw;
+    display: flex;
+}
+
+.input {
+    width: 20vw;
+    margin: 5% 2% 5% 2%;
+}
+
+.formInput {
+    width: 100%;
+    height: 6vh;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    transition: border-color 0.2s;
+    font-size: 16px;
+    direction: rtl;
+    transition: all 250ms ease-in-out;
+    margin-top: 5vh;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+}
+
+.formInput::placeholder {
+    margin: 0;
+    font-size: 16px;
+}
+
+.formInput:focus {
+    width: 100%;
+    transition: all 250ms ease-in-out;
+    transform: translateY(2px);
+    background-color: var(--AbiFiro);
+    box-shadow: none;
+    color: var(--Sefid);
+}
+
+.formdiv {
+    direction: rtl;
+    width: 30vw;
+    height: 0;
+    transition: all 50ms ease-in;
+}
+
+.formdiv_Active {
+    direction: rtl;
+    width: 40vw;
+    height: auto;
+    transition: all 50ms ease-in;
+}
+
+.formdiv h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 254, 254);
+    border-radius: 2px;
+    width: 61%;
+    padding: 2%;
+}
+
+.formdiv_Active h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 99, 99);
+    border-radius: 2px;
+    margin: 0 14vw 0 0;
+    width: 61%;
+    padding: 2%;
+}
+
+
+.formContainer button {
+    border: none;
+    color: var(--Sefid);
+    background-color: var(--AbiFiro);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Yekan';
+    font-size: 16px;
+    width: 15vw;
+    height: 3.8rem;
+    padding: 2%;
+    margin: 12.5vh 0 0 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    transition: all 250ms ease-in-out;
+}
+
+.formContainer button:hover {
+    transition: all 250ms ease-in-out;
+    transform: translateY(15px);
+    background-color: rgb(77, 77, 77);
+    box-shadow: none;
+}
+
+.submitdiv h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 99, 99);
+    border-radius: 2px;
+    width: 15vw;
+    height: 3.1rem;
+    margin: 12.7vh 0.4vw 0 0;
+    padding: 2%;
+}
+
+.submitButton {
+    display: none;
+}
+
+.submitButton_active button {
+    font-family: Yekan-bakh;
+}
+
+.label_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.label_footer h6 {
+    margin-top: 30px;
+}
+
+.label_footer div {
+    width: 27vw;
+    height: 1px;
+    background-color: rgb(107, 107, 107);
+    margin-top: 5vh;
+}
+
+@media (max-width: 1000px) {
+
+    .label_title div {
+        width: 30%;
+        height: 1px;
+        background-color: rgb(107, 107, 107);
+        margin-top: 7%;
+    }
+
+    .label_title h2 {
+        margin-top: 5%;
+    }
+
+    .input {
+        width: 100%;
+        margin: 5% 2% 5% 2%;
+    }
+
+    .formContainer {
+        display: block;
+        margin-top: 2%;
+        margin-left: 28%;
+    }
+
+    .submitButton_active button {
+        margin: 0;
+        width: 106%;
+    }
+
+    .formInput {
+        margin-top: 3%;
+    }
+
+    .label_footer div {
+        width: 17vw;
+        height: 1px;
+        background-color: rgb(107, 107, 107);
+        margin-top: 5vh;
+    }
+    
+}
+
+@media (max-width: 412px) {
+
+    .label_title div {
+        width: 15vw;
+        height: 1px;
+        background-color: rgb(107, 107, 107);
+        margin-top: 4rem;
+    }
+
+    .label p {
+        margin: 1% 5% 20% 5%;
+    }
+
+    .formContainer {
+        width: 80vw;
+        height: 40vh;
+        margin: 0 0 1vh 15vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .input {
+        width: 60vw;
+        margin: 0 0 0 0;
+    }
+
+    .formInput {
+        margin-top: 1vh;
+    }
+
+    .submitButton_active {
+        margin-right: 5rem;
+    }
+
+    .formContainer button {
+        width: 64vw;
+        padding: 2%;
+        margin: 5vh 0 0 0;
+    }
+    
+    .formContainer button:hover {
+        transition: all 250ms ease-in-out;
+        transform: translateY(15px);
+        background-color: rgb(77, 77, 77);
+        box-shadow: none;
+    }
+
+    .label_footer {
+        text-align: center;
+    }
+
+    .label_footer div {
+        width: 30vw;
+        height: 1px;
+        background-color: rgb(107, 107, 107);
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+}

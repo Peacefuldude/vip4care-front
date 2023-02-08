@@ -1,0 +1,158 @@
+.container {
+    width: 40%;
+    padding: 2%;
+    margin: 3% 0 0 28%;
+    direction: rtl;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -5px 0 inset;
+    font-family: Yekan-bakh;
+}
+
+.formContainer {
+    padding: 5%;
+}
+
+.formInput {
+    width: 100%;
+    height: 6vh;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    transition: border-color 0.2s;
+    font-size: 20px;
+    direction: rtl;
+    transition: all 250ms ease-in-out;
+    margin-top: 5vh;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+}
+
+.formInput::placeholder {
+    margin: 0;
+    font-size: 16px;
+}
+
+.formInput:focus {
+    width: 100%;
+    transition: all 250ms ease-in-out;
+    transform: translateY(2px);
+    background-color: var(--AbiFiro);
+    box-shadow: none;
+    color: var(--Sefid);
+}
+
+.formdiv {
+    direction: rtl;
+    width: 30vw;
+    height: 0;
+    transition: all 50ms ease-in;
+}
+
+.formdiv_Active {
+    direction: rtl;
+    width: 100%;
+    height: auto;
+    transition: all 50ms ease-in;
+}
+
+.formdiv h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 254, 254);
+    border-radius: 2px;
+    width: 61%;
+    padding: 2%;
+}
+
+.formdiv_Active h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: var(--grey);
+    border-radius: 2px;
+    width: 87%;
+    padding: 2%;
+}
+
+.formContainer h1 {
+    margin: 0;
+    text-align: center;
+    color: var(--grey);
+}
+
+.formContainer p {
+    margin-bottom: 0;
+    direction: rtl;
+}
+
+.formButtons {
+    display: flex;
+    width: 100%;
+}
+
+.formButtonsDisabled {
+    display: none;
+}
+
+.adminverfi_btn {
+    border: none;
+    color: var(--Sefid);
+    background-color: var(--AbiFiro);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Yekan';
+    font-size: 20px;
+    width: 100%;
+    height: 3.8rem;
+    padding: 2%;
+    margin: 0 10% 0 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
+    transition: all 250ms ease-in-out;
+}
+
+.submitButton:hover {
+    transition: all 250ms ease-in-out;
+    transform: translateY(15px);
+    background-color: var(--grey);
+    box-shadow: none;
+}
+
+@media (max-width: 1000px) {
+  
+    .container {
+        width: 80%;
+        margin: 3% 0 10% 8%;
+    }
+  
+}
+
+@media (max-width: 412px) {
+
+    .container {
+        width: 80%;
+        margin: 3% 0 10% 8%;
+    }
+
+    .formContainer {
+        padding: 10% 6% 10% 10%;
+    }
+
+    .formdiv_Active {
+        width: 75vw;
+    }
+
+    .formButtons {
+        display: flex;
+        width: 104%;
+    }
+
+    .submitButton {
+        width: 70%;
+        height: 3.8rem;
+        padding: 2%;
+        margin-right: 2vw;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
+        transition: all 250ms ease-in-out;
+    }
+
+}

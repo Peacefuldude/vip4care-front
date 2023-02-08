@@ -1,0 +1,88 @@
+.container {
+    margin: 5%;
+    width: auto;
+    height: auto;
+    direction: rtl;
+    padding: 2%;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -5px 0 inset;
+    transition: all 200ms ease-in-out;
+    font-family: Yekan-bakh;
+}
+
+.container button {
+    border: none;
+    color: var(--Sefid);
+    background-color: var(--AbiFiro);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Yekan';
+    font-size: 16px;
+    width: 20%;
+    height: 3rem;
+    padding: 2%;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    transition: all 250ms ease-in-out;
+}
+
+.container button:hover {
+    transition: all 250ms ease-in-out;
+    transform: translateY(10px);
+    background-color: rgb(77, 77, 77);
+    box-shadow: none;
+}
+
+.star_btn {
+    display: none;
+}
+
+.star_btn_active {
+    display: block;
+}
+
+.container div {
+    margin: 0;
+    padding: 0;
+}
+
+.formdiv {
+    direction: rtl;
+    width: 30vw;
+    height: 0;
+    transition: all 50ms ease-in;
+}
+
+.formdiv_Active {
+    direction: rtl;
+    width: 40vw;
+    height: auto;
+    transition: all 50ms ease-in;
+}
+
+.formdiv h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 254, 254);
+    border-radius: 2px;
+    width: 61%;
+    padding: 2%;
+}
+
+.formdiv_Active h6 {
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: var(--grey);
+    border-radius: 2px;
+    width: 87%;
+    padding: 2%;
+}
+
+
+@media (max-width: 412px) {
+
+    .container {
+        margin: 5%;
+        padding: 0;
+    }
+    
+}

@@ -1,0 +1,214 @@
+.container {
+    background-color: var(--AbiFiroDark);
+    width: 100%;
+    height: 70vh;
+    font-family: Yekan-bakh;
+}
+
+.License {
+    width: 100%;
+    height: 94%;
+    display: flex;
+}
+
+.bar {
+    width: 100%;
+    height: 4vh;
+    background-color: var(--Tala);
+}
+
+.left {
+    width: 150vw;
+    height: 80%;
+    margin: 2% 1% 0 2%;
+}
+
+.logoandaddress {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+    height: 100%;
+    padding: 1%;
+}
+
+.logo h1 {
+    color: var(--Sefid);
+    font-size: xx-large;
+    margin: 0;
+}
+
+.logo span {
+    color: var(--Tala);
+    font-size: xx-large;
+}
+
+.logo p {
+    color: var(--Sefid);
+    margin: 0;
+    width: fit-content;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 30px;
+    margin: -2% 5% 0 0;
+    transition: all 200ms ease-in-out;
+}
+
+.logo img:hover {
+    transition: all 200ms ease-in-out;
+    transform: translateY(-7px);
+}
+
+.address {
+    width: 50%;
+    height: 100%;
+    direction: rtl;
+    padding: 1%;
+    color: var(--Sefid);
+}
+
+.address h2 {
+    color: var(--Tala);
+    margin: 0;
+}
+
+
+.address p {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 100%;
+    height: 70%;
+    margin-top: 2vh;
+    background-image: url(../../../Images/Tehran.png);
+    transition: all 200ms ease-in-out;
+}
+
+.map:hover {
+    transition: all 200ms ease-in-out;
+    transform: translateY(-10px);
+}
+
+.right {
+    width: 150vw;
+    height: 80%;
+    margin: 2% 2% 0 1%;
+    padding: 1%;
+}
+
+.buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    direction: rtl;
+}
+
+.buttons div {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: transparent;
+    color: var(--Sefid);
+    width: 15vw;
+    height: 3rem;
+    direction: rtl;
+    padding-left: 30%;
+    border-right: 3px solid var(--Tala);
+    border-radius: 3px;
+    margin: 5px;
+    transition: all 200ms ease-in-out;
+    font-size: 14px;
+}
+
+.buttons button:hover {
+    transition: all 200ms ease-in-out;
+    background-color: var(--Tala);
+    color: var(--Sefid);
+}
+
+.buttons div {
+    width: 50%;
+    height: 100%;
+}
+
+.more {
+    direction: rtl;
+    color: var(--Sefid);
+    width: 100%;
+    height: 40%;
+}
+
+.more_p {
+    margin: 3% 0;
+    padding: 0;
+}
+
+.more_upper_p {
+    margin-top: -12%;
+}
+
+.more div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.more img {
+    width: 80px;
+}
+
+@media (max-width: 1000px) {
+    
+    .map {
+        width: 100%;
+        height: 70%;
+        margin-top: 2vh;
+        background-image: url(../../../Images/Tehran.png);
+    }
+
+    .buttons button {
+        width: 20vw;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .License {
+        width: 100%;
+        height: 94%;
+        display: block;
+    }
+    
+    .left {
+        width: 92vw;
+        height: 80%;
+        margin: 2% 1% 0 2%;
+    }
+
+    .map {
+        margin-top: 4vh;
+        background-image: url(../../../Images/Tehran.png);
+    }
+
+    .right {
+        display: none;
+    }
+
+}

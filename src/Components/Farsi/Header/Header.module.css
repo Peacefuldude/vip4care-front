@@ -1,0 +1,137 @@
+.container {
+    color: var(--grey);
+    font-family: Yekan-bakh;
+}
+
+.upperdiv {
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5%;
+}
+
+.upperdiv_right button {
+    align-items: center;
+    appearance: none;
+    background-color: var(--AbiFiro);
+    border-radius: 5px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: var(--Sefid);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 1vw;
+    transition: box-shadow .15s, transform .15s;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.upperdiv_right button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.upperdiv_right a {
+    text-decoration: none;
+}
+
+.upperdiv_left span {
+    padding: 0 10px 0 5px;
+}
+
+.upperdiv_left img {
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.middlediv {
+    margin-left: 2%;
+    width: 96%;
+    height: 1.5px;
+    background-color: rgb(161, 161, 161);
+}
+
+.bottomdiv {
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.headerlinks {
+    display: flex;
+}
+
+.headerlinks button {
+    font-family: Yekan-bakh;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: var(--grey);
+    font-size: 18px;
+    margin: 10px 5px 0 0;
+    transition: all 250ms ease-out;
+}
+
+.headerlinks button:hover {
+    transition: all 250ms ease-out;
+    color: var(--AbiFiro);
+}
+
+/* Dropdowns */
+.dropdown_drops {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+}
+
+.dropdown_btn:hover > .dropdown_drops {
+    display: block;
+    margin-top: 5vh;
+}
+
+.dropdown_drops button {
+    background-color: var(--AbiFiro);
+    font-family: Yekan-bakh;
+}
+
+/* Special for ham menu  */
+@media (max-width: 767px) {
+
+    .upperdiv_right {
+        margin: 1vh -1vw 0 0;
+    }
+
+    .upperdiv_left {
+        display: none;
+    }
+
+    .middlediv {
+        display: none;
+    }
+
+    .bottomdiv {
+        display: none;
+    }
+
+    .dropdown_drops {
+        width: 80%;
+    }
+
+    .dropdown_btn:hover > .dropdown_drops {
+        display: block;
+        margin-top: 5vh;
+        margin-left: 10%;
+    }
+}

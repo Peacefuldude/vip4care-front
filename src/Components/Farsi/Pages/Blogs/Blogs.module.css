@@ -1,0 +1,20 @@
+.container {
+    padding: 0 4rem;
+    font-family: Yekan-bakh;
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        padding: 0 3rem;
+    }
+
+}
+
+@media (max-width: 412px) {
+
+    .container {
+        padding: 0 2rem;
+    }
+    
+}

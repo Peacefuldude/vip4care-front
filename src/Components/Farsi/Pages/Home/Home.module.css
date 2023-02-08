@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    font-family: Yekan-bakh;
+}
+
+.EmergencyCall {
+    position: fixed;
+}
+
+.HeaderandLanding {
+    width: 100%;
+    height: 120vh;
+}
+
+.EmergencyNurse {
+    width: 100%;
+    height: auto;
+}
+
+.AboutUs {
+    width: 100%;
+    height: auto;
+}
+
+.Services {
+    width: 100%;
+    height: auto;
+}
+
+.License {
+    width: 100%;
+    height: auto;
+}
+
+.Footer {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    
+    .Services {
+        margin-bottom: 10%;
+    }
+    
+}
+
+@media (max-width: 412px) {
+
+    .HeaderandLanding {
+        width: 100%;
+        height: 30vh;
+    }
+    
+}

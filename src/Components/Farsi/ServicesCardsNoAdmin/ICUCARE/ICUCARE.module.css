@@ -1,0 +1,14 @@
+.ICUCARE_container {
+    direction: rtl;
+    display: flex;
+    margin: 0 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ICUCARE_container img {
+    width: 70%;
+    margin: 5%;
+    align-items: center;
+}
