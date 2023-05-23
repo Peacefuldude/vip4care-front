@@ -1,4 +1,5 @@
 import React from 'react';
+import * as FileSaver from 'file-saver';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from 'axios';
@@ -6,6 +7,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 // Components
 import Header from '../../Header/Header';
+
+// Files
+import Collab from '../../../../Files/Collab.docx'
 
 // Functions
 import { WorkWithUsValidate } from '../../../../Functions/WorkWithUsValidate';
@@ -113,6 +117,13 @@ const WorkWithUs = () => {
         setResume(res)
     }
 
+    // Resume file download
+
+    const resumeFileEx = () => {
+        console.log("ssss");
+        FileSaver.saveAs(Collab, "فایل رزومه" + ".docx");
+    }
+
     return ( 
         <div>
             <section>
@@ -198,6 +209,9 @@ const WorkWithUs = () => {
                         <div className={(errors.mobile && touched.mobile) ? styles.formdiv_Active : styles.formdiv}>
                             {<h6>{errors.mobile}</h6>}
                         </div>
+                    </div>
+                    <div className={buttonDisable ? styles.formButtonsDisabled : styles.formButtons}>
+                        <button onClick={resumeFileEx} className={styles.submitButton}>دریافت فایل نمونه</button>
                     </div>
                     <div className={buttonDisable ? styles.formButtonsDisabled : styles.formButtons}>
                         <button type="submit" className={styles.submitButton}>ارسال فرم</button>

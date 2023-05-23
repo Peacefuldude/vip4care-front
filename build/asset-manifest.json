@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.27925ecf.css",
-    "main.js": "/static/js/main.8088427c.js",
+    "main.css": "/static/css/main.df167e9a.css",
+    "main.js": "/static/js/main.ddaa0184.js",
     "static/media/license.jpg": "/static/media/license.c49d7df156aadae7972d.jpg",
     "static/media/Tehran.png": "/static/media/Tehran.e111ec0e8c7aade76e1c.png",
     "static/media/logo-2.png": "/static/media/logo-2.4a8cf662e5b579f82a84.png",
@@ -20,15 +20,16 @@
     "static/media/Yekan-bakh.woff2": "/static/media/Yekan-bakh.8c84ec442c2b313aaccf.woff2",
     "static/media/Picture1.jpg": "/static/media/Picture1.8271f19852031cddf0b7.jpg",
     "static/media/empty-folder.png": "/static/media/empty-folder.95ac1b13a0eacc995dd5.png",
+    "static/media/Collab.docx": "/static/media/Collab.9815403b9b9da15e5a13.docx",
     "static/media/phone.png": "/static/media/phone.72400899015ff376c9f0.png",
     "static/media/instagram.png": "/static/media/instagram.9417e220838c85200485.png",
     "static/media/email.png": "/static/media/email.28af76d965426101d8a7.png",
     "index.html": "/index.html",
-    "main.27925ecf.css.map": "/static/css/main.27925ecf.css.map",
-    "main.8088427c.js.map": "/static/js/main.8088427c.js.map"
+    "main.df167e9a.css.map": "/static/css/main.df167e9a.css.map",
+    "main.ddaa0184.js.map": "/static/js/main.ddaa0184.js.map"
   },
   "entrypoints": [
-    "static/css/main.27925ecf.css",
-    "static/js/main.8088427c.js"
+    "static/css/main.df167e9a.css",
+    "static/js/main.ddaa0184.js"
   ]
 }
