@@ -88,6 +88,13 @@
     color: var(--AbiFiro);
 }
 
+.logo img {
+    /* width: 150px; */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
 /* Dropdowns */
 .dropdown_drops {
     display: none;
@@ -97,8 +104,10 @@
 }
 
 .dropdown_btn:hover > .dropdown_drops {
-    display: block;
-    margin-top: 5vh;
+    /* display: block; */
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 60%);
 }
 
 .dropdown_drops button {

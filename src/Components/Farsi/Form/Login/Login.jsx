@@ -92,7 +92,7 @@ const Login = () => {
     }
 
     return ( 
-        <div>
+        <div className={styles.maindiv}>
             <section>
                 <  Header/>
             </section>

@@ -16,20 +16,20 @@ const License = () => {
                 <div className={styles.left}>
                     <div className={styles.logoandaddress}>
                         <div className={styles.logo}>
-                            <h1>VIP<span>4</span>CARE</h1>
+                            <h1>Tandis</h1>
                             <p>info@vip4care.ir</p>
-                            <p>@vip4care :تلگرام</p>
+                            <p>@Medicalequipment :تلگرام</p>
                             <section>
-                                <a href="https://instagram.com/vip4care?igshid=ZmVmZTY5ZGE=">
+                                <a href="https://instagram.com/tandis4med?igshid=MzNlNGNkZWQ4Mg==" target='_blank'>
                                     <img src={Instagram} alt="instagram icon" />
                                 </a>
                             </section>
                         </div>
                         <div className={styles.address}>
                             <h2>ایران</h2>
-                            <p>تهران، حقانی شمالی، نرسیده به گاندی شمالی، پلاک 67، طبقه دوم، واحد 7</p>
-                            <p>واتسپ: 09032346878</p>
-                            <p>تلفن ما: 02188666930</p>
+                            <p>تهران، میدان دوم صادقیه، برج تجاری اداری گلدیس، طبقه دوازدهم، واحد نوزدهم، شماره 1219</p>
+                            <p>واتسپ: 09120085112</p>
+                            <p>تلفن ما: 02144288183</p>
                         </div>
                     </div>
                     <a href="https://www.google.com/maps/place/35%C2%B045'27.4%22N+51%C2%B024'45.6%22E/@35.7576111,51.4126667,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x3ddb530ce71dcbb6!8m2!3d35.7576141!4d51.4126625?hl=en">

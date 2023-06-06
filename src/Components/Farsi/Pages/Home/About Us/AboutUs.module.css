@@ -78,15 +78,16 @@
     height: 3rem;
     padding: 2%;
     margin-right: 30vw;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
     transition: all 250ms ease-in-out;
     font-family: Yekan-bakh;
+    border-radius: 25px;
 }
 
 .text button:hover {
     transition: all 250ms ease-in-out;
     transform: translateY(15px);
-    background-color: rgb(77, 77, 77);
+    background-color: var(--AbiFiroDarker);
     box-shadow: none;
 }
 

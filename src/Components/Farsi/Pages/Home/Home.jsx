@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 
 // Styles
 import styles from './Home.module.css'
@@ -15,6 +17,15 @@ import Footer from '../../Footer/Fooer';
 import EmergencyCall from '../../Emergency Call/EmergencyCall';
 
 const Home = () => {
+
+    const Navigate = useNavigate();
+
+    // useEffect(() => {
+    //     if (!localStorage.getItem("user")) {
+    //         Navigate("/login");
+    //     }
+    // }, []);
+
     return ( 
             <div className={styles.continer}>
                 <section className={styles.EmergencyCall}>
@@ -23,9 +34,9 @@ const Home = () => {
                 <section className={styles.HeaderandLanding}>
                     <  HeaderandLanding/>
                 </section>
-                <section className={styles.EmergencyNurse}>
+                {/* <section className={styles.EmergencyNurse}>
                     <  EmergencyNurse/>
-                </section>
+                </section> */}
                 <section className={styles.AboutUs}>
                     <  AboutUs/>
                 </section>

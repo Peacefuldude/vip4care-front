@@ -8,7 +8,6 @@ import axios from "axios";
 
 // Components
 import Header from "../../Header/Header";
-import EmergencyNurse from "../../Pages/Home/Emergency Nurse/EmergencyNurse";
 import EmergencyCall from "../../Emergency Call/EmergencyCall";
 import License from "../../License/License";
 import Footer from "../../Footer/Fooer";
@@ -59,9 +58,6 @@ const Details = () => {
                             <button className={styles.details_btn}>به خانه برگردید</button>
                         </Link>
                     </main>
-                    <section id="requestsec">
-                        <  EmergencyNurse/>
-                    </section>
                     <section>
                         <  License/>
                     </section>

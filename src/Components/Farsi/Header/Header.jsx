@@ -103,7 +103,7 @@ const Header = () => {
                         <div className={styles.upperdiv_left}>
                             <span>info@vip4care.ir</span>
                             <img src={phone} alt="phone icon" />
-                            <span>02188666930</span>
+                            <span>02144288183</span>
                             <img src={email} alt="email icon" />
                         </div>
                     </div>
@@ -120,7 +120,7 @@ const Header = () => {
                                 <button >خدمات ما</button>
                             </div>
                             <Link to="/blog"><button>بلاگ</button></Link>
-                            <Link to="/workwithus"><button>همکاری با ما</button></Link>
+                            <a href="https://www.vip4care.ir"><button>وی آی پی</button></a>
                         </div>
                         <div></div>
                         <div></div>

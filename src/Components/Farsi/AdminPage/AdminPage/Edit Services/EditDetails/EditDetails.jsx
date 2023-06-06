@@ -32,6 +32,10 @@ const EditDetails = ( ...props ) => {
     // Handlers and States related to the inputs
     const [data, setData] = useState({
         title: "",
+        model: "",
+        guarantee: "",
+        price: "",
+        quantity: ""
     });
 
     const changeHandler = (event) => {
@@ -129,7 +133,11 @@ const EditDetails = ( ...props ) => {
             } else {
                 setErrorMassage(true);
                 setTouched({
-                    title: true,
+                    title: "",
+                    model: "",
+                    guarantee: "",
+                    price: "",
+                    quantity: ""
                 });
             }
             
@@ -294,6 +302,94 @@ const EditDetails = ( ...props ) => {
                                 }}
                                 {...props}
                             />
+                    </div>
+                    <div>
+                        <p>مدل کالا:</p>
+                        <input
+                            className={styles.formInput}
+                            type="text"
+                            name="model"
+                            placeholder="مدل کالا را وارد کنید"
+                            value={data.model}
+                            onChange={changeHandler}
+                            onFocus={focusHandler}
+                            onBlur={unFocusHandler}
+                        />
+                        <div
+                            className={
+                                errors.model && touched.model
+                                    ? styles.formdiv_Active
+                                    : styles.formdiv
+                            }
+                        >
+                            {<h6>{errors.model}</h6>}
+                        </div>
+                    </div>
+                    <div>
+                        <p>گارانتی:</p>
+                        <input
+                            className={styles.formInput}
+                            type="text"
+                            name="guarantee"
+                            placeholder="مدت گارانتی را وارد کنید"
+                            value={data.guarantee}
+                            onChange={changeHandler}
+                            onFocus={focusHandler}
+                            onBlur={unFocusHandler}
+                        />
+                        <div
+                            className={
+                                errors.guarantee && touched.guarantee
+                                    ? styles.formdiv_Active
+                                    : styles.formdiv
+                            }
+                        >
+                            {<h6>{errors.guarantee}</h6>}
+                        </div>
+                    </div>
+                    <div>
+                        <p>قیمت:</p>
+                        <input
+                            className={styles.formInput}
+                            type="text"
+                            name="price"
+                            placeholder="قیمت مدنظر را وارد کنید"
+                            value={data.price}
+                            onChange={changeHandler}
+                            onFocus={focusHandler}
+                            onBlur={unFocusHandler}
+                        />
+                        <div
+                            className={
+                                errors.price && touched.price
+                                    ? styles.formdiv_Active
+                                    : styles.formdiv
+                            }
+                        >
+                            {<h6>{errors.price}</h6>}
+                        </div>
+                    </div>
+                    <div>
+                        <p>تعداد:</p>
+                        <input
+                            className={styles.formInput}
+                            type="text"
+                            name="quantity"
+                            placeholder="تعداد مدنظر را وارد کنید"
+                            value={data.quantity}
+                            onChange={changeHandler}
+                            onFocus={focusHandler}
+                            onBlur={unFocusHandler}
+                        />
+                        <div
+                            className={
+                                errors.quantity && touched.quantity
+                                    ? styles.formdiv_Active
+                                    : styles.formdiv
+                            }
+                        >
+                            {<h6>{errors.quantity}</h6>}
+                        </div>
                     </div>
                     <div
                         className={

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 // Styles
 import styles from './Service.module.css'
@@ -10,6 +11,34 @@ const Service = ({productData}) => {
     // WIZYWIG in use
     const createText = () => {
         return {__html: productData.description}
+    }
+
+    // Requset Button
+    const axiosConficPost = {
+        headers: {
+            "Dev": "vip4c@reDevelop3r",
+
+            // "Access-Control-Allow-Origin": "*",
+            // "Access-Control-Allow-Headers":"*",
+            // "Access-Control-Allow-Methods":"*"
+        },
+    };
+
+    const [userData, setUserData] = useState();
+    
+    const reqHandler = (event) => {
+        event.preventDefault();
+        setUserData(localStorage.getItem("user"))
+        console.log(userData);
+        axios.post(`https://api.vip4care.ir/blog/delete${productData._id}`, userData, axiosConficPost)
+            .then((response)=> {
+                if (response.data.success) {
+                    alert("همکاران ما در نزدیکترین زمان ممکن با شما تماس می گیرند. ممنون از حسن انتخاب شما.")
+                }
+            })
+            .catch((error)=> {
+                alert("مشکلی پیش آمده. لطفا بعدن دوباره امتحان کنید.")
+            })
     }
 
     return ( 
@@ -22,9 +51,17 @@ const Service = ({productData}) => {
                 <div className={styles.description}>
                     <p dangerouslySetInnerHTML={createText()}></p>
                 </div>
-                <Link to={`/home/${productData._id}`}>
-                    <button>بیشتر بخوانید</button>
-                </Link>
+                <div className={styles.details}>
+                    <section>
+                        <p>مدل کالا: {productData.model}</p>
+                        <p>گارانتی: {productData.guarantee}</p>
+                    </section>
+                    <section>
+                        <p>قیمت: {productData.price}</p>
+                        <p>تعداد: {productData.quantity}</p>
+                    </section>
+                </div>
+                <button className={styles.req_btn} onClick={reqHandler}>ثبت درخواست</button>
             </div>
         </div>
      );

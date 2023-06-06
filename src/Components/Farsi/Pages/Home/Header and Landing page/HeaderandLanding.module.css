@@ -44,7 +44,7 @@
     align-items: center;
   appearance: none;
   background-color: var(--AbiFiro);
-  border-radius: 5px;
+  border-radius: 10px;
   border-width: 0;
   box-sizing: border-box;
   color: var(--Sefid);
@@ -63,7 +63,7 @@
 }
 
 .upperdiv_right button:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
@@ -145,6 +145,7 @@
 .Landing {
     position: absolute;
     width: 100%;
+    opacity: 0.9;
 }
 
 .starthere {
@@ -201,13 +202,13 @@
     font-size: 14px;
     transition: all 250ms ease-in-out;
     margin-top: 5vh;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
 }
 
 .starthere_Active button:hover {
     transition: all 250ms ease-in-out;
     transform: translateY(5px);
-    background-color: rgb(98, 224, 205);
+    background-color: var(--AbiFiroLight);
     box-shadow: none;
 }
 
@@ -228,8 +229,10 @@
 }
 
 .dropdown_btn:hover > .dropdown_drops {
-    display: block;
+    /* display: block; */
     margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 60%);
 }
 
 .dropdown_drops button {
@@ -238,10 +241,19 @@
 
 }
 
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
 @media (max-width: 1000px) {
 
     .logo img {
-        width: 150px;
+        /* width: 150px; */
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
     }
 
     .starthere_Active {
@@ -402,8 +414,10 @@
     .under372pxlogo img {
         margin: 3% 0 0 25%;
         scale: 1.2;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
     }
-
 
 }
 

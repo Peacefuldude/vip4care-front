@@ -6,7 +6,7 @@
 }
 
 .textDiv {
-    padding: 5%;
+    padding: 3% 3% 0 3%;
 }
 
 .textDiv button {
@@ -17,19 +17,21 @@
     font-family: 'Yekan';
     font-size: 16px;
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     padding: 2%;
     margin-top: 1%;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
     transition: all 250ms ease-in-out;
     background-color: var(--AbiFiro);
     font-family: Yekan-bakh;
+    border-radius: 10px;
 }
 
 .textDiv button:hover {
     transition: all 250ms ease-in-out;
-    background-color: rgb(77, 77, 77);
+    background-color: var(--AbiFiroDarker);
     box-shadow: none;
+    color: #fff;
 }
 
 .description {

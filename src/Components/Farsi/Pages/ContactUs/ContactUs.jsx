@@ -31,9 +31,9 @@ const ContactUs = () => {
                     <section>
                         <  AboutUsInContact/>
                     </section>
-                    <section>
+                    {/* <section>
                         <  EmergencyNurse/>
-                    </section>
+                    </section> */}
                     <section>
                         <  License/>
                     </section>

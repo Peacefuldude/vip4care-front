@@ -3,8 +3,9 @@
     padding: 2%;
     margin: 3% 0 5% 28%;
     direction: rtl;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -5px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -5px 0 inset;
     font-family: Yekan-bakh;
+    border-radius: 25px;
 }
 
 .formContainer {
@@ -24,7 +25,8 @@
     direction: rtl;
     transition: all 250ms ease-in-out;
     margin-top: 5vh;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
+    border-radius: 10px;
 }
 
 .formInput::placeholder {
@@ -111,12 +113,14 @@
     padding: 2%;
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
     transition: all 250ms ease-in-out;
+    border-radius: 10px;
+    font-family: Yekan-bakh;
 }
 
 .button:hover {
     transition: all 250ms ease-in-out;
     transform: translateY(15px);
-    background-color: var(--grey);
+    background-color: var(--AbiFiroDarker);
     box-shadow: none;
 }
 

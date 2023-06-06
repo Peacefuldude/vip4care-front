@@ -11,7 +11,7 @@ import Header from "../../../Header/Header";
 // Images
 import email from "../../../../../Images/email.png";
 import phone from "../../../../../Images/phone.png";
-import logo from '../../../../../Images/logo-2.png'
+import logo from '../../../../../Images/logo.png'
 
 // Styles
 import styles from "./HeaderandLanding.module.css";
@@ -86,7 +86,7 @@ const HeaderandLanding = () => {
                             <div className={styles.upperdiv_left}>
                                 <span>info@vip4care.ir</span>
                                 <img src={phone} alt="phone icon" />
-                                <span>02188666930</span>
+                                <span>02144288183</span>
                                 <img src={email} alt="email icon" />
                             </div>
                         </div>
@@ -110,7 +110,7 @@ const HeaderandLanding = () => {
                                 <Link to="/blog">
                                     <button>بلاگ</button>
                                 </Link>
-                                <Link to="/workwithus"><button>همکاری با ما</button></Link>
+                                <a href="https://www.vip4care.ir"><button>وی آی پی</button></a>
                             </div>
                             <div></div>
                             <div></div>

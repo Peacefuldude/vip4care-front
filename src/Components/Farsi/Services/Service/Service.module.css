@@ -3,6 +3,7 @@
     width: auto;
     height: auto;
     direction: rtl;
+    border-radius: 12px;
     padding: 2%;
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -1px 0 inset;
     transition: all 200ms ease-in-out;
@@ -10,7 +11,7 @@
 }
 
 .container:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -5px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -5px 0 inset;
     transform: translateY(-10px);
     transition: all 200ms ease-in-out;
 }
@@ -24,7 +25,34 @@
     padding: 5%;
 }
 
-.textDiv button {
+.details {
+    border: none;
+    color: var(--Sefid);
+    background-color: var(--AbiFiro);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Yekan';
+    font-size: 16px;
+    width: 100%;
+    padding: 2%;
+    border-radius: 12px;
+    margin-top: 4%;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
+    transition: all 250ms ease-in-out;
+    font-family: Yekan-bakh;
+}
+
+.details section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.details section p {
+    padding: 2% 5% 2% 5%;
+}
+
+.req_btn {
     border: none;
     color: var(--Sefid);
     background-color: var(--AbiFiro);
@@ -33,20 +61,18 @@
     cursor: pointer;
     font-family: 'Yekan';
     font-size: 16px;
-    width: 100%;
-    height: 3rem;
+    width: 104%;
     padding: 2%;
+    border-radius: 12px;
     margin-top: 4%;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 172, 149) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiro) 0 -3px 0 inset;
     transition: all 250ms ease-in-out;
     font-family: Yekan-bakh;
 }
 
-.textDiv button:hover {
-    transition: all 250ms ease-in-out;
-    transform: translateY(15px);
-    background-color: rgb(77, 77, 77);
-    box-shadow: none;
+.req_btn:hover {
+    background-color: var(--AbiFiroDark);
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--AbiFiroDark) 0 -3px 0 inset;
 }
 
 .description {
